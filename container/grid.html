@@ -39,6 +39,11 @@
 
             // using function chainging to make a copy of the element 
             $("#target3").clone().appendTo("#right-well");
+
+
+            $("#target1").parent().css("background-color","red"); // Accessing the parent of a given element
+
+            $(".right-well").children().css("color","orange"); // accessing the children of a given element in jQuery
         });
         console.log('This works very wel')
     </script>
