@@ -15,13 +15,15 @@
         // Learning jQuery as a javascript library
         $(document).ready(function(){
             // Without the document. ready function will load after the html is rendered.
-            $("button").addClass("animated bounce");
-            $(".well").addClass("color-red");
+            // $("button").addClass("animated bounce");
+            // $(".well").addClass("color-red");
 
             // removing a class
-            $("button").removeClass("animated")
+            // $("button").removeClass("animated")
 
-            $("#target3").addClass("animated css") // Calling an id
+            // $("#target3").addClass("animated css") // Calling an id
+            $("#target1").css("color","red") // Changing css style of the element
+            $("#target1").prop("disabled", true) // Changing the property of the element selector
         });
     </script>
 </head>
@@ -35,17 +37,17 @@
                 <h4>Left-well</h4>
                 <!-- Bootstrap has a class called 'well'  -->
                 <div class="well" id="left-well">
-                    <button class="btn btn-default target">#target1</button>
-                    <button class="btn btn-default target">#target2</button>
-                    <button class="btn btn-default target">#target3</button>
+                    <button class="btn btn-default target" id="target1">#target1</button>
+                    <button class="btn btn-default target" id="target2">#target2</button>
+                    <button class="btn btn-default target" id="target3">#target3</button>
                 </div>
             </div>
             <div class="col-xs-6">
                 <h4>Right-well</h4>
                 <div class="well" id="right-well">
-                    <button class="btn btn-default target">#target4</button>
-                    <button class="btn btn-default target">#target5</button>
-                    <button class="btn btn-default target">#target6</button>
+                    <button class="btn btn-default target" id="target4">#target4</button>
+                    <button class="btn btn-default target" id="target5">#target5</button>
+                    <button class="btn btn-default target" id="target6">#target6</button>
                 </div>
             </div>
         </div>
