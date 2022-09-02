@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Grid</title>
-
+</head>
+<body>
     <script>
         // Learning jQuery as a javascript library
         $(document).ready(function(){
             // Without the document. ready function will load after the html is rendered.
-            // $("button").addClass("animated bounce");
             // $(".well").addClass("color-red");
 
             // removing a class
@@ -26,20 +26,21 @@
             $("#target2").appendTo("#right-well");
 
             // $("#target3").addClass("animated css") // Calling an id
-            $("#target1").css("color","red") // Changing css style of the element
-            $("#target1").prop("disabled", true) // Changing the property of the element selector
+            $("#target1").css("color","red"); // Changing css style of the element
+            $("#target1").prop("disabled", true); // Changing the property of the element selector
 
             // removing an element from a page using jQuery
-            $("target4").remove()
+            $("target4").remove();
 
             // removing elements from one div to another is possible in jQuery
             // we use .appendTo()
 
-            $("#target2").appendTo("#right-well")
+            $("#target2").appendTo("#right-well");
+
+            // using function chainging to make a copy of the element 
+            $("#target3").clone().appendTo("#right-well");
         });
     </script>
-</head>
-<body>
     <!-- Used the container-fluid class from bootstrap  -->
     <div class="container-fluid">
         <h3 class="text-primary text-center">jQuery Playground</h3>
