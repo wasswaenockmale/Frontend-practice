@@ -20,10 +20,22 @@
 
             // removing a class
             // $("button").removeClass("animated")
+            $("#target1").css("color", "red");
+            $("#target1").prop("disabled", true);
+            $("#target4").remove();
+            $("#target2").appendTo("#right-well");
 
             // $("#target3").addClass("animated css") // Calling an id
             $("#target1").css("color","red") // Changing css style of the element
             $("#target1").prop("disabled", true) // Changing the property of the element selector
+
+            // removing an element from a page using jQuery
+            $("target4").remove()
+
+            // removing elements from one div to another is possible in jQuery
+            // we use .appendTo()
+
+            $("#target2").appendTo("#right-well")
         });
     </script>
 </head>
