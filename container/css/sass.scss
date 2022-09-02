@@ -1,11 +1,16 @@
 /* Going to learn sass in this css file  */
 /* creating variables in sass  */
-$text-color: red;
-
-.container{
-    color: $text-color;
-}
+$text-color: white;
+$text-color-two: green;
 
 body{
     background-color: $text-color;
+    height: 100vh;
+}
+
+// nesting the selector 
+body{
+    .container{
+        color: $text-color-two;
+    }
 }
