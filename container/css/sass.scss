@@ -1,4 +1,11 @@
 /* Going to learn sass in this css file  */
 /* creating variables in sass  */
-$text-color: red
+$text-color: red;
 
+.container{
+    color: $text-color;
+}
+
+body{
+    background-color: $text-color;
+}
