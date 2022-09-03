@@ -1,0 +1,10 @@
+/* Going to learn sass in this css file  */
+/* creating variables in sass  */
+body {
+  background-color: white;
+  height: 100vh;
+}
+
+body .container {
+  color: green;
+}/*# sourceMappingURL=sass.css.map */

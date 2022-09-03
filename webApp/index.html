@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css">
+    <title>Web App</title>
+</head>
+<body>
+
+    <!-- Navbar  -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+            <a href="" class="navbar-brand">Frontend Bootcamp</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="#learn" class="nav-link">What you'll learn</a></li>
+                    <li class="nav-item"><a href="#questions" class="nav-link">Questions</a></li>
+                    <li class="nav-item"><a href="#instructors" class="nav-link">Instructions</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Showcase  -->
+    <section class="bg-dark text-light p-5">
+        <div class="container">
+            <div class="d-sm-flex aligin-items-center justify-content-between">
+                <div>
+                    <h1>Became a <span class="text-warning">web developer</span></h1>
+                    <p class="lead my-4">
+                        We focus on teaching students the fundamentals of the lastest
+                        and greatest technologies to prepare them for their first development role.
+                    </p>
+                    <button class="btn btn-primary btn-lg">Start the Enrollement</button>
+                </div>
+                <!-- Using the 'd-none and d-sm-block' to block the dispay of the image when the screen size reduces -->
+                <img class="img-fluid w-50 img-thumbnail d-none d-sm-block" src="./media/images/developer.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
