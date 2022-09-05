@@ -43,3 +43,8 @@ body{
         border:none;
     }
 }
+
+// Using a for to create a sass loop
+@for $j from 1 through 12{
+    .text-#{$j}{width: 15px * $j;}
+}
