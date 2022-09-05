@@ -12,6 +12,8 @@ body{
 body{
     .container{
         color: $text-color-two;
+        @include border-radius(15px);
+        @include border-stroke(medium);
     }
 }
 
@@ -22,4 +24,22 @@ body{
     -moz-border-radius:$radius;
     -ms-border-radius:$radius;
     border-radius: $radius;
+}
+
+// Use @if and @else to Add Logic To Your Styles
+// The if else condition can be used to add logic to the style.
+// I am gonna create a mixin called border-stroke
+@mixin border-stroke($val){
+    @if($val == "light"){
+        border: 1px solid black;
+    }
+    @else if($val == "medium"){
+        border: 3px solid black;
+    }
+    @else if($val == "heavy"){
+        border: 6px solid black;
+    }
+    @else{
+        border:none;
+    }
 }
