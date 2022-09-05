@@ -14,3 +14,12 @@ body{
         color: $text-color-two;
     }
 }
+
+// Create Reusable CSS with Mixins
+// This is reusable css code. where some can just call the include the border-radius
+@mixin border-radius($radius) {
+    -webkit-border-radius:$radius;
+    -moz-border-radius:$radius;
+    -ms-border-radius:$radius;
+    border-radius: $radius;
+}
