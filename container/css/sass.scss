@@ -30,13 +30,13 @@ body{
 // The if else condition can be used to add logic to the style.
 // I am gonna create a mixin called border-stroke
 @mixin border-stroke($val){
-    @if($val == "light"){
+    @if $val == light {
         border: 1px solid black;
     }
-    @else if($val == "medium"){
+    @else if $val == medium {
         border: 3px solid black;
     }
-    @else if($val == "heavy"){
+    @else if $val == heavy {
         border: 6px solid black;
     }
     @else{
