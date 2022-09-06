@@ -61,4 +61,8 @@ body{
 }
 
 // Creating a variable in and assigning to a value in sass
-$x: 1
+$x: 1;
+@while $x < 6 {
+    .text-#{$x}{font-size:(15 * $x)px;}
+    $x: $x + 1;
+}
