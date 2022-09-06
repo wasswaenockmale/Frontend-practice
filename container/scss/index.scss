@@ -4,3 +4,16 @@
     -ms-border-radius: $radius;
     border-radius: $radius;
 }
+
+.one-info{
+    width: 100px;
+    height: 100px;
+    font-size: 15px;
+    color: red;
+}
+
+// The class below is gonna extend the .one-info
+.info{
+    @extend .one-info;
+    background-color: magenta;
+}
