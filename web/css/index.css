@@ -21,6 +21,8 @@ nav{
 img{
     width: 100%;
     display: block;
+    /* transform: translateY(135deg); */
+    /* animation: move 10s infinite; */
     /* height: 100%; */
 }
 
@@ -38,9 +40,6 @@ img{
     /* transform: rotateZ(135deg); */
     background-color: yellow;
     transition: all 1s linear;
-    animation-name: move;
-    animation-duration: 2s;
-    animation-iteration-count: 2;
     
 }
 
