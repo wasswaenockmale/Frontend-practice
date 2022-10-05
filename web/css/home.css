@@ -11,6 +11,7 @@ header{
     /* background-color: white; */
     position: relative;
     margin: 100px;
+    animation: move_x 5s infinite;
 }
 
 .one{
@@ -70,4 +71,13 @@ header{
 @keyframes moves_t{
     from{transform: rotate(-20deg);}
     to{transform: rotate(20deg);}
+}
+
+@keyframes move_x{
+    0%{transform: translateX(10px);}
+    20%{transform: translateX(20px);}
+    40%{transform: translateX(40px);}
+    60%{transform: translateX(60px);}
+    80%{transform: translateX(800px);}
+    100%{transform: translateX(0px);}
 }
