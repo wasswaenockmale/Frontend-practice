@@ -16,13 +16,14 @@ nav{
     margin: 100px auto;
     border: 1px solid grey;
     position: relative;
+    /* animation: moves 2s infinite; */
 }
 
 img{
     width: 100%;
     display: block;
-    /* transform: translateY(135deg); */
-    /* animation: move 10s infinite; */
+    /* transform:  */
+    /* animation: moves 10s infinite; */
     /* height: 100%; */
 }
 
@@ -34,12 +35,13 @@ img{
     height: 100%;
     box-sizing: border-box;
     position: absolute;
-    top: -25px;
-    left: -25px;
+    /* top: -25px;
+    left: -25px; */
     z-index: -1;
     /* transform: rotateZ(135deg); */
     background-color: yellow;
-    transition: all 1s linear;
+    /* transition: all 1s linear; */
+    animation: rotate_it 5s infinite;
     
 }
 
@@ -50,11 +52,13 @@ img{
     height: 100%;
     box-sizing: border-box;
     position: absolute;
-    top: -50px;
-    left: -50px;
+    /* top: -50px;
+    left: -50px; */
+    top: 0px;
     z-index: -2;
     background: red;
-    transition: all 1s linear;
+    animation: rotate_y 5s infinite;
+    /* transition: all 1s linear; */
 }
 
 /* :root{
@@ -70,11 +74,11 @@ left: 50px;
     left: 25px;
 } */
 
-.div:hover::after,
+/* .div:hover::after,
 .div:hover::before{
     top: 0px;
     left: 0px;
-}
+} */
 
 /* Creating keyframes */
 @keyframes moves {
@@ -88,4 +92,20 @@ left: 50px;
     80%{transform: translateY(80px);}
     90%{transform: translateY(90px);}
     100%{transform: translateY(100px);}
+}
+
+@keyframes rotate_it{
+    0%{transform: rotate(25deg);}
+    25%{transform: rotate(50deg);}
+    50%{transform: rotate(75deg);}
+    75%{transform: rotate(90deg);}
+    100%{transform:rotate(100deg);}
+}
+
+@keyframes rotate_y{
+    0%{transform: rotate(-25deg);}
+    25%{transform: rotate(-50deg);}
+    50%{transform: rotate(-75deg);}
+    75%{transform: rotate(-90deg);}
+    100%{transform:rotate(-100deg);}
 }
