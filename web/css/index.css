@@ -10,5 +10,17 @@ nav{
     color: white;
 }
 
+.div{
+    width: 20vw;
+    /* height: 50vh; */
+    margin: 100px auto;
+    border: 5px solid grey;
+}
 
+img{
+    width: 100%;
+    display: block;
+    /* height: 100%; */
+}
 
+/* Now, am learning the before and after pseudo classes */
