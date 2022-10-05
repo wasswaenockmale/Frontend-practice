@@ -35,8 +35,13 @@ img{
     top: -25px;
     left: -25px;
     z-index: -1;
+    /* transform: rotateZ(135deg); */
     background-color: yellow;
     transition: all 1s linear;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+    
 }
 
 .div::after{
@@ -53,9 +58,9 @@ img{
     transition: all 1s linear;
 }
 
-:root{
+/* :root{
     background-color: blue;
-}
+} */
 /* .div:hover::after{
 top: 50px;
 left: 50px;
@@ -70,4 +75,18 @@ left: 50px;
 .div:hover::before{
     top: 0px;
     left: 0px;
+}
+
+/* Creating keyframes */
+@keyframes moves {
+    0%{transform: translateY(10px);}
+    20%{transform: translateY(20px);}
+    30%{transform: translateY(30px);}
+    40%{transform: translateY(40px);}
+    50%{transform: translateY(50px);}
+    60%{transform: translateY(60px);}
+    70%{transform: translateY(70px);}
+    80%{transform: translateY(80px);}
+    90%{transform: translateY(90px);}
+    100%{transform: translateY(100px);}
 }
