@@ -14,7 +14,8 @@ nav{
     width: 20vw;
     /* height: 50vh; */
     margin: 100px auto;
-    border: 5px solid grey;
+    border: 1px solid grey;
+    position: relative;
 }
 
 img{
@@ -24,3 +25,47 @@ img{
 }
 
 /* Now, am learning the before and after pseudo classes */
+.div::before{
+    content: ""; /*The content attribute is required.*/
+    border: 2px solid yellow;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    z-index: -1;
+    background-color: yellow;
+    transition: all 1s linear;
+}
+
+.div::after{
+    content: ""; /*The content attribute is required.*/
+    border: 2px solid red;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    z-index: -2;
+    background: red;
+    transition: all 1s linear;
+}
+
+
+/* .div:hover::after{
+top: 50px;
+left: 50px;
+}
+
+.div:hover::before{
+    top: 25px;
+    left: 25px;
+} */
+
+.div:hover::after,
+.div:hover::before{
+    top: 0px;
+    left: 0px;
+}
