@@ -19,7 +19,8 @@ header{
     height: 100%;
     position: absolute;
     top: 0px;
-    transform: rotate(20deg);
+    /* transform: rotate(20deg); */
+    animation: moves 2s infinite;
     z-index: -1;
 }
 
@@ -42,5 +43,31 @@ header{
     position: absolute;
     top: 0px;
     z-index: -2;
-    transform: rotate(-20deg); 
+    /* transform: rotate(-20deg); */
+    animation: moves_t 2s infinite;
+
+}
+
+/* @keyframes moves{
+    0%{transform: rotate(10deg);}
+    10%{transform: rotate(20deg);}
+    20%{transform: rotate(20deg);}
+    30%{transform: rotate(30deg);}
+    40%{transform: rotate(40deg);}
+    50%{transform: rotate(50deg);}
+    60%{transform: rotate(60deg);}
+    70%{transform: rotate(70deg);}
+    80%{transform: rotate(80deg);}
+    90%{transform: rotate(90deg);}
+    100%{transform: rotate(100deg);}
+} */
+
+@keyframes moves{
+    from{transform: rotate(20deg);}
+    to{transform: rotate(-20deg);}
+}
+
+@keyframes moves_t{
+    from{transform: rotate(-20deg);}
+    to{transform: rotate(20deg);}
 }
