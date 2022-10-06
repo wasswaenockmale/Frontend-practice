@@ -16,6 +16,7 @@ header{
 
 .one{
     background-color: blue;
+    /* filter: grayscale(0.5); */
     width: 100%;
     height: 100%;
     position: absolute;
