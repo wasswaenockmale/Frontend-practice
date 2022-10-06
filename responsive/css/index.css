@@ -1,0 +1,15 @@
+.container{
+    padding: 5px;
+}
+
+.circle{
+    width: 5em;
+    height: 5em;
+    background-color: rgb(61, 174, 61);
+    border-radius: 50%;
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
